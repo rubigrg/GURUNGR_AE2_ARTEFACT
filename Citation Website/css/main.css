@@ -1,0 +1,401 @@
+/** Pop-up **/
+.openbutton {
+    color: yellow;
+    background-color: transparent;
+}
+
+/** Login page **/
+
+h1 {
+    text-align: center;
+    font-size: 30px;
+    color: black;
+}
+
+.loginform {
+    margin-left: 37%;
+    width: 25%;
+}
+
+fieldset {
+    background-color: #686c72;
+}
+
+.logsub {
+    margin-left: 65%;
+    color: white;
+    background-color: black;
+    border: 0px;
+    padding: 5px 10px;
+    width: 21%;
+    height: 26px;
+    border-radius: 2px;
+}
+
+.logsub {
+    opacity: 0.9;
+}
+
+.formtext {
+    color: white;
+    margin-left: 9%;
+}
+
+input {
+    margin-left: 9%;
+    width: 77%;
+    height: 20px;
+}
+
+/** Forgot your password **/
+.popup {
+    font-size: 14px;
+    color: white;
+    text-decoration: underline;
+    margin-left: 1%;
+}
+
+/* Popup container */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.popup:hover {
+    text-decoration: none;
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+  visibility: visible;
+  animation: fadeIn 1s
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+/** Register **/
+.registerbtn {
+  color: yellow;
+    background-color: #686c72;
+  margin-left: 13px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+    text-decoration: underline;
+}
+
+.registerbtn:hover {
+  opacity: 0.8;
+    text-decoration: none;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+
+/** Columns **/
+
+.columns-content {
+    border: 2px solid black;
+    align-content: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  margin-left: 25%:
+  width: 28%;
+  padding: 5px;
+  height: 100px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/** Nav bar **/
+.topnav {
+  overflow: hidden;
+    background-color: #cdd0d3;
+    height: 50px;
+    margin-top: 3.5%;
+}
+
+.topnav a {
+  float: right;
+  display: block;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  font-size: 17px;
+  padding: 10px 5px;
+    height:50px;
+    background-color: #cdd0d3;
+    font-weight: bold;
+}
+
+.topnav a:hover {
+  background-color: #686c72;
+  color: white;
+    font-weight: bold;
+}
+
+a.active {
+  background-color: #686c72;
+  color: white;
+}
+
+.topnav input[type=text] {
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.fa fa-search {
+	background-color: blue;
+    width: ;
+}
+
+
+/** Homepage section **/
+
+h2 {
+    color: black;
+    text-align: center;
+}
+
+/** Tabs **/
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #e3e7ea;
+    width: 60%;
+    margin-left: 19%;
+}
+
+
+.tablinks {
+    width: 30%;
+}
+
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #e3e7ea;
+    border-top: 3px solid #adb0b2;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #e3e7ea;
+    border-top: 2px solid #adb0b2;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+    width: 60%;
+    margin-left: 19%;
+    margin-bottom: 19%;
+    height: 590px;
+}
+
+h3 {
+    color: darkblue;
+    font-size: 20px;
+}
+
+h3, p{
+    margin-left: 19%;
+    width: 60%;
+}
+
+p {
+    color: black;
+    font-family: sans-serif;
+}
+
+h4 {
+    color: black;
+    font-size: 30px;
+    margin-left: 30%;
+}
+
+.harvard, .apa, .mla {
+    cursor: pointer;
+    background-color: black;
+    font-size: 25px;
+    color: white;
+}
+
+.harvard:hover, .apa:hover, .mla:hover {
+    background-color: black;
+    opacity: 0.8;
+    font-size: 25px;
+    color: white;
+}
+
+/** Personal details section **/
+.perstbl {
+    margin-left: 30%;
+}
+
+.weburl {
+    height: 40px;
+}
+
+.generate {
+    color: white;
+    background-color: black;
+    width: 20%;
+    height: 40px;
+    font-size: 14px;
+    margin-left: 40%;
+}
+
+.generate:hover {
+    opacity: 0.8;
+    color: white;
+    background-color: black;
+}
+
+option {
+    margin-left: 10%;
+    height: 25px;
+}
+
+#website-btn, .#website-local {
+    color: white;
+    background-color: black;
+    width: 20%;
+    height: 40px;
+    font-size: 14px;
+}
+
+section{
+    margin-bottom: 10%;
+}
+
+.logout {
+    background-color: black;
+    color: white;
+}
+
+.logout:hover {
+    opacity: 0.8;
+}
